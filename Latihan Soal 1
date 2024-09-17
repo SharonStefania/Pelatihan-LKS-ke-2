@@ -1,0 +1,44 @@
+// Latihan Soal 1
+#include <stdio.h>
+
+float angka;
+
+float reamur;
+float fahrenheit;
+float kelvin;
+
+void reamurr(){
+    reamur = angka*4/5;
+    printf("Hasil = %f reamur\n", reamur);
+}
+
+void fahrenheitt(){
+    fahrenheit = angka*9/5 + 32;
+    printf("Hasil = %f fahrenheit\n", fahrenheit);
+}
+
+void kelvinn(){
+    kelvin = angka + 273;
+    printf("Hasil = %f kelvin\n", kelvin);
+}   
+
+int main() {
+    printf("Masukkan Nilai = ");
+    scanf("%f", &angka);
+    for (int i=0; i<11; i++){
+        printf("", i);
+        
+    int Nilai = i % 3;
+    
+    if (Nilai == 1){
+        reamurr();
+    }
+    else if (Nilai == 2){
+        fahrenheitt();
+    }
+    else {
+        kelvinn();
+    }
+}
+    return 0;
+}
