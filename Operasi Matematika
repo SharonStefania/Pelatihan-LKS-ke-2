@@ -1,0 +1,15 @@
+// Operasi Matematika
+#include <stdio.h>
+
+int angka;
+
+void hasil (){
+    angka = 7*1+17+1;
+    printf("%d", angka);
+}
+
+int main() {
+    hasil();
+    
+    return 0;
+}
