@@ -1,0 +1,40 @@
+// Mengubah dari celcius ke reamur, fahrenheit, kelvin
+#include <stdio.h>
+
+float angka;
+
+float reamur;
+float fahrenheit;
+float kelvin;
+
+void celcius(){
+    printf("Nilai = ");
+    scanf("%f", &angka);
+    
+    reamur = angka*4/5;
+    printf("Hasil = %f reamur\n", reamur);
+    
+    fahrenheit = angka*9/5 + 32;
+    printf("Hasil = %f fahrenheit\n", fahrenheit);
+    
+    kelvin = angka + 273;
+    printf("Hasil = %f kelvin\n", kelvin);
+}   
+
+//Mengubah fahrenheit ke kelvin
+void fahrenheitt(){
+    float angka;
+    printf("Nilai = ");
+    scanf("%f", &angka);
+    angka = angka-32;
+    angka = angka*5/9;
+    angka = angka + 273;
+    printf("Hasil = %f kelvin\n", angka);
+}
+
+float main() {
+    celcius();
+    fahrenheitt();
+
+    return 0;
+}
