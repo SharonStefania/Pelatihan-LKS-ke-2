@@ -1,0 +1,17 @@
+// Mengubah dari celcius ke kelvin
+#include <stdio.h>
+
+int angka;
+
+void kelvin(){
+    scanf("%d", &angka);
+    angka = angka + 273;
+    printf("Hasil = %d kelvin", angka);
+}   
+
+int main() {
+    printf("Masukkan Nilai = ");
+    kelvin();
+
+    return 0;
+}
